@@ -13,19 +13,18 @@ function getComputerChoice() {
 }
 
 function playRound(playerPlay, compPlay) {
-    if (playerPlay === 'rock') {
-        if (compPlay === 'paper') {
-            return "You Lose! Paper beats Rock"
-        }
+    if (playerPlay === 'rock' && compPlay === 'paper') {
+        computerScore +=1;
+        return "You Lose! Paper beats Rock."
     };
-    
-    if (playerPlay === 'paper') {
-        if (compPlay === 'scissors') {
-            return "You Lose! Scissors beats Paper"
-        }
-    };
-}
+};
 
-const playerPlay = "rock";
+let playerPlay = 'rock';
 const compPlay = getComputerChoice();
 console.log(playRound(playerPlay, compPlay));
+
+let playerScore = parseInt(0);
+let computerScore = parseInt(0);
+function game() {
+
+}
